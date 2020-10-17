@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: ""
-url: "https://sunginh.github.io"
+url: "http://sunginh.com/"
 
 # THEME-SPECIFIC CONFIGURATION
 title: I'm SungIn.Hong # site's title
