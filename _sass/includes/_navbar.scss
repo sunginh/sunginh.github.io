@@ -20,6 +20,10 @@
   float: left;
   width: 100%;
 
+  .branding {
+    padding-left: 50%;
+  }
+
   .separator {
     user-select: none;
     opacity: $navbar-separator-opacity;
@@ -34,21 +38,20 @@
   }
 
   .avatar {
-    height: 3em;
-    width: 3em;
+    height: 80px;
+    width: 80px;
     float: left;
     margin-top: -13px;
-    border-radius: 0.2em;
+    border-radius: 50%;
     margin-right: 0.5em;
     padding: 10px 10px;
-
   }
 
   .site-title {
     float: left;
     font-weight: bold;
     font-family: $font-family-logo;
-    font-size: 1.3em;
+    font-size: 35px;
   }
 }
 
@@ -65,6 +68,9 @@ nav {
     float: right;
     text-align: right;
     display: block;
+  }
+  ul.hide {
+    padding-top: 10px;
   }
 
   li {
@@ -84,9 +90,7 @@ nav {
         margin-right: 10px;
         float: right;
       }
-
     }
-
   }
 }
 
@@ -101,7 +105,7 @@ nav {
 @media screen and (max-width: $break) {
   .site-header {
     img.avatar {
-      margin-top: -7px
+      margin-top: -7px;
     }
 
     .site-title {
@@ -121,7 +125,7 @@ nav {
       overflow: hidden;
 
       /* fade out, then shrink */
-      transition: opacity .25s 0s, font-size .25s 0s;
+      transition: opacity 0.25s 0s, font-size 0.25s 0s;
       transition-delay: 0s;
 
       &.hide {
@@ -148,7 +152,6 @@ nav {
         margin: 0;
         display: block;
       }
-
     }
   }
 }
